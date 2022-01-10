@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+
+
+body, html {
+    margin: 0;
+    background-size: cover;
+    background-image: url(./images/sunset.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-color: #464646; 
+    display: flex;
+    flex-flow: column nowrap;
+    min-height: 100%;
+
+}
+
+html {
+
+    height: 100%;
+}
+
+nav {
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row nowrap;
+    
+}
+
+ul {
+
+    margin:0;
+    padding: 20px;
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    gap: 16px;
+    font-size: 24px;
+    font-family: 'Playfair Display', serif;}
+
+li {
+
+    display: inline-block;
+  position: relative;
+  color: #3d3d3d;
+
+}
+
+
+li::after {
+
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #3d3d3d;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+li:hover:after {
+    transform: scaleX(1);
+    transform-origin: center;
+  }
+    
+
+.layer1 {
+
+    height: 250px;
+
+}
+
+.logo-container {
+
+    height: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+   
+.logotext {
+
+    font-family: 'Playfair Display', serif;
+    font-size: 2em;
+}
+
+.logotext1 {
+
+    font-family: 'Playfair Display', serif;    font-size: 2em;
+    color: rgb(221, 173, 111);
+    padding-top: 30px;
+}
+
+
+
+.footer {
+    
+    color: rgb(121, 121, 121);
+    margin-top: auto;
+    text-align: center;
+
+}
